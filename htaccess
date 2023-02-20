@@ -1,0 +1,12 @@
+
+RewriteEngine on
+
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/coconbjh/flag"
+PassengerBaseURI "/"
+PassengerPython "/home/coconbjh/virtualenv/flag/3.7/bin/python"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+RewriteCond %{HTTP_HOST} ^coco\-rico\.fun$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.coco\-rico\.fun$
+RewriteRule ^sitemap\.xml$ "https\:\/\/coco\-rico\.fun\/sitemap\.xml" [R=302,L]
+
